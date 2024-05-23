@@ -1,0 +1,15 @@
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+}
+
+.color-over {
+    mix-blend-mode: lighten;
+}
+
+.overshadow {
+    opacity: 0.7;
+    filter: contrast(0.7);
+}

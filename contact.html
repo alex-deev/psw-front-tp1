@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./../common/bootstrap-5.3.3-dist/css/bootstrap.css">
+  <title>Contacto</title>
+</head>
+
+<body class="bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg navbar-expand-md ps-2 pe-2 bg-body fixed-top rounded-bottom-4 shadow">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-semibold" href="./index.html">Universal News</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-2 ms-lg-0 mb-1">
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./news.html">Noticias</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./blogs.html">Blogs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./contact.html">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="mt-5 pb-5 bg-body-secondary rounded-bottom-4">
+    <form class="container pt-5" action="javascript:window.location.reload();" method="post" id="formulario">
+      <legend class="text-danger fs-2">Solicitud para participar</legend>
+      <p class="mb-1">Paricipa y colaborá para reportar las noticias más importantes de tu ciudad, región o país.</p>
+      <p class="mb-5 text-secondary">Esta solicitud pasará por un proceso de revisión detallado. Luego, se te pedirán otros datos para corroborar que eres una persona real. Es probable que se te realize una entrevista en persona.</p>
+      <fieldset class="row gx-sm-0 gx-md-5 gy-3 bg-body border rounded-4">
+        <div class="col-12 col-md-6">
+          <div class="row mb-3">
+            <div class="col">
+              <label class="form-label" for="apellido">Apellido</label>
+              <input class="form-control" type="text" id="apellido" name="apellido">
+            </div>
+            <div class="col">
+              <label class="form-label" for="nombre">Nombre</label>
+              <input class="form-control" type="text" id="nombre" name="nombre">
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col">
+              <label class="form-label" for="dni">Domicilio</label>
+              <input class="form-control" type="number" id="dni" name="dni">
+            </div>
+            <div class="col">
+              <label class="form-label" for="fecha_nac">Fecha de Nacimiento</label>
+              <input class="form-control" type="date" id="fecha_nac" name="fecha_nac">
+            </div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="pais">País de Origen</label>
+            <input class="form-control" type="text" id="pais" name="pais" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="email">Correo Electrónico</label>
+            <input class="form-control" type="email" id="email" name="email" required>
+          </div>
+          <div>
+            <label class="form-label" for="pass">Contraseña</label>
+            <input class="form-control" type="password" id="pass" name="pass" required>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div>
+            <p class="mb-1">¿Con qué frecuencia cree que repotará?</p>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="frec" id="baja">
+              <label class="form-check-label" for="baja">De vez en cuando</label><br>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="frec" id="media">
+              <label class="form-check-label" for="media">Regularmente</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="frec" id="alta">
+              <label class="form-check-label" for="alta">Todos los días</label>
+            </div>
+          </div>
+          <hr>
+          <div>
+            <p class="mb-1">¿Qué tipo de noticia le interesa más?</p>
+            <select class="form-select form-select" id="categoria">
+                <option value="0" selected>Todas</option>
+                <option value="1">Ciencia</option>
+                <option value="2">Economía</option>
+                <option value="3">Política</option>
+                <option value="4">Sociales</option>
+                <option value="5">Cultura</option>
+                <option value="6">Deportes</option>
+            </select>
+          </div>
+          <hr>
+          <div>
+            <p class="mb-1">Declaración de usuario:</p>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="op_1" name="opcion1">
+              <label class="form-check-label" for="op_1">No difundiré noticias falsas.</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="op_2" name="opcion2">
+              <label class="form-check-label" for="op_2">No distorcionaré noticias reales.</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="op_3" name="opcion3">
+              <label class="form-check-label" for="op_3">No tendré preferencias políticas ni religiosas.</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="op_4" name="opcion4">
+              <label class="form-check-label" for="op_4">Acepto las responsabilidades de postear noticias.</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="op_5" name="opcion4">
+              <label class="form-check-label" for="op_5">Acepto los terminos y condiciones.</label>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="mt-2 mb-4 text-end">
+          <input class="btn btn-success me-2" type="submit" value="Enviar">
+          <input class="btn btn-danger " type="reset" value="Limpiar">
+        </div>
+      </fieldset>
+    </form>
+  </main>
+
+  <footer class="container-fluid pt-5 pb-3 bg-body-tertiary">
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <a class="navbar-brand fw-semibold" href="#">Universal News</a>
+          <p class="text-body-tertiary lh-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, ipsum.
+          </p>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-4 text-body-tertiary">
+          <h6>Desarrollo</h6>
+          <p class="text-body-tertiary lh-sm">
+            Sitio Web desarrollado por Alex Vega.<br>
+            APU - UNJu
+          </p>
+        </div>
+        <div class="col-3 text-body-tertiary">
+          <h6>Contenido</h6>
+          <ul class="list-unstyled">
+            <li><a class="link-secondary" href="./news.html">Noticias</a></li>
+            <li><a class="link-secondary" href="./blogs.html">Blogs</a></li>
+            <li><a class="link-secondary" href="./contact.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS combo -->
+  <script type="text/javascript" src="./../common/bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./../common/bootstrap-5.3.3-dist/css/bootstrap.css">
+    <title>Noticias</title>
+</head>
+
+<body class="bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg navbar-expand-md ps-2 pe-2 bg-body fixed-top rounded-bottom-4 shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-semibold" href="./index.html">Universal News</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-2 ms-lg-0 mb-1">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./news.html">Noticias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./blogs.html">Blogs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="pt-5 pb-5 bg-body-secondary rounded-bottom-4">
+        <div class="container mt-5">
+            <div class="card mb-3 border-danger-subtle rounded-4">
+                <div class="row g-0 align-items-center">
+                    <div class="col-md-3 ps-md-3 ps-lg-0">
+                        <img src="./images/news/xmAPHUXXiU.jpg" class="img-fluid rounded-4" alt="...">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <span class="card-title mt-2 me-2 fs-6 text-danger bg-danger-subtle rounded-pill badge">EN
+                                VIVO</span>
+                            <h5 class="d-inline">Lorem ipsum dolor sit amet.</h5>
+                            <p class="card-text mb-0 fst-italic text-danger">Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit. Placeat, architecto.</p>
+                            <p class="card-text mb-1">Lorem ipsum dolor commodi natus cum sed laudantium, qui nostrum,
+                                quidem, quam reiciendis esse
+                                totam inventore harum ullam iste.</p>
+                            <p class="card-text"><small class="text-body-secondary">Actualizado hace 4 mins</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid pt-3">
+            <h1>Últimas Noticias</h1>
+            <div class="pt-3 row g-4">
+                <div class="col-sm-12 col-md-3 col-lg-2">
+                    <div class="p-2 rounded-4 bg-body border border-secondary-subtle">
+                        <div class="row mb-3">
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Noticia"
+                                    aria-label="Search">
+                                <button class="btn btn-outline-success btn-sm" type="submit">Buscar</button>
+                            </form>
+                        </div>
+                        <div class="row mb-2">
+                            <label for="categoria" class="col-auto col-form-label col-form-label-sm">Categoría</label>
+                            <div class="col ps-0">
+                                <select class="form-select form-select-sm" id="categoria">
+                                    <option value="0" selected>Todas</option>
+                                    <option value="1">Ciencia</option>
+                                    <option value="2">Economía</option>
+                                    <option value="3">Política</option>
+                                    <option value="4">Sociales</option>
+                                    <option value="5">Cultura</option>
+                                    <option value="6">Deportes</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <label for="relevancia" class="col-auto col-form-label col-form-label-sm">Relevancia</label>
+                            <div class="col ps-0">
+                                <select class="form-select form-select-sm" id="relevancia">
+                                    <option value="0" selected>Todas</option>
+                                    <option value="1">Reciente</option>
+                                    <option value="2">Escalando</option>
+                                    <option value="3">Urgente</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label for="fecha" class="col-auto col-form-label col-form-label-sm">Fecha</label>
+                            <input type="date" class="col me-3 form-control form-control-sm" id="fecha">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
+                        <div class="col">
+                            <div class="card rounded-4">
+                                <img src="./images/news/Evo4wmtRaPI.jpg" class="card-img-top rounded-top-4" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">In augue</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Laudantium autem omnis repellat dolorem earum ducimus!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card rounded-4">
+                                <img src="./images/news/pMkVrVsQ-.jpg" class="card-img-top rounded-top-4" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ut tortor</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+                                        corrupti laboriosam veritatis, corporis deserunt voluptate.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card rounded-4">
+                                <img src="./images/news/vknMLDofdD4.jpg" class="card-img-top rounded-top-4" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Nullam volutpat</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
+                                        repellat consectetur iste eos eum veritatis?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card rounded-4">
+                                <img src="./images/news/xaQb2kUIy6Q.jpg" class="card-img-top rounded-top-4" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Vivamus at condimentum</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt
+                                        suscipit cumque nemo assumenda fuga quaerat?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card rounded-4">
+                                <img src="./images/news/oobuT8JssJY.jpg" class="card-img-top rounded-top-4" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Nulla sed</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Suscipit impedit rem porro aliquid! Exercitationem, fugit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card rounded-4">
+                                <img src="./images/news/3GWOlKitAMY.jpg" class="card-img-top rounded-top-4" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Aenean vulputate</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Exercitationem delectus in perspiciatis ex expedita possimus.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card rounded-4">
+                                <img src="./images/news/V3dIguQugjs.jpg" class="card-img-top rounded-top-4" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Interdum et</h5>
+                                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure
+                                        accusantium ducimus asperiores alias cumque?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card rounded-4">
+                                <img src="./images/news/rfNLa1HL7eY.jpg" class="card-img-top rounded-top-4" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lorem, ipsum</h5>
+                                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        Porro, voluptate mollitia. Amet soluta fugit nesciunt!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="container-fluid pt-5 pb-3 bg-body-tertiary">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <a class="navbar-brand fw-semibold" href="#">Universal News</a>
+                    <p class="text-body-tertiary lh-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Molestias, ipsum.</p>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-4 text-body-tertiary">
+                    <h6>Desarrollo</h6>
+                    <p class="text-body-tertiary lh-sm">
+                        Sitio Web desarrollado por Alex Vega.<br>
+                        APU - UNJu
+                    </p>
+                </div>
+                <div class="col-3 text-body-tertiary">
+                    <h6>Contenido</h6>
+                    <ul class="list-unstyled">
+                        <li><a class="link-secondary" href="./news.html">Noticias</a></li>
+                        <li><a class="link-secondary" href="./blogs.html">Blogs</a></li>
+                        <li><a class="link-secondary" href="./contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS combo -->
+    <script type="text/javascript" src="./../common/bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
